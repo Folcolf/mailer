@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>New prod</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'/>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js" type="application/javascript"></script>
+    <!-- use the font -->
+    <style type="text/css">
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 48px;
+        }
+    </style>
+</head>
+<body>
+
+<p th:text="${'Salut ' + name}"></p>
+<p>Je suis un producteur français, et j’ai quelques prods qui pourraient t’intéresser.</p>
+<p> Je pense que ça pourrait grave coller avec ton univers!</p>
+<p>Je reste à l’affût si tu as la moindre question. Merci pour ton travail <span class="iconify"
+                                                                                 data-icon="mdi:hands-pray"></span></p>
+<div>
+    Instagram: <a th:href="${'https://www.instagram.com/' + instagram}" th:text="${instagram}"></a>
+</div>
+<div>
+    <span th:text="${sender}"></span>
+</div>
+</body>
+</html>
